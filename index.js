@@ -20,6 +20,20 @@ app.get("/users",(req,res)=>{
     })
 })
 
+
+app.get("/",(req,res)=>{
+    // res.sendFile(__dirname + '/index.html');
+    res.json({
+        name: 'Abhilash pandey',
+        Marrital_Status: 'married',
+        wife : 'Shreya Chaturvedi',
+        Children:'1 boy and 1 girl',
+        Age: 30,
+        success : true,
+
+    })
+})
+
 app.listen(4000,()=>{
     console.log('server is running on port 4000')
 })
